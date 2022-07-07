@@ -9,7 +9,7 @@ const projects = [
     {
         name: "製作個人網站？",
         description: "This is a project description. " + random_text(64),
-        image: "https://picsum.photos/640/320",
+        image: "https://d1hjkbq40fs2x4.cloudfront.net/2019-12-23/files/canon-landscape-photography-preparation-tips_1968-2.jpg",
         link: "https://github.com",
         tags: ["tag1", "tag2", "tag3"],
     },
@@ -72,6 +72,7 @@ watch(step, () => {
                         :tags="project.tags"
                     />
                 </Fade>
+                <img :src="project.image" />
             </div>
         </div>
     </div>
